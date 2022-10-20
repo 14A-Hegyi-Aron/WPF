@@ -35,17 +35,5 @@ namespace TableTennisWPF.usercontrols
         {
             InitializeComponent();
         }
-
-        private void UserControl_Drop(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(typeof(CompetitorModel)) && competitors == null)
-            {
-                this.Competitors = new CompetitorModel[1]
-                {
-                    (CompetitorModel)e.Data.GetData(typeof(CompetitorModel))
-                };
-                this.AllowDrop = false;
-            }
-        }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -45,17 +46,57 @@ namespace TableTennisWPF.pages
                 {
                     AllowDrop = true,
                 };
+                pair.Drop += Pair_Drop;
                 panelPairs.Children.Add(pair);
             }
+            Draw();
+        }
+
+        private void Pair_Drop(object sender, DragEventArgs e)
+        {
+            var pair = sender as DrawPair;
+            if (e.Data.GetDataPresent(typeof(CompetitorModel)) && pair.Competitors == null)
+            {
+                var competitor = (CompetitorModel)e.Data.GetData(typeof(CompetitorModel));
+                pair.Competitors = new CompetitorModel[1] { competitor };
+                pair.AllowDrop = false;
+
+                Competitors.Remove(competitor);
+            }
+            pair.Height = 50;
         }
 
         private void lbCompetitors_MouseMove(object sender, MouseEventArgs e)
         {
+            if (FreeSpaces() <= Competitors.Count)
+                return;
+
             if (e.LeftButton == MouseButtonState.Pressed && lbCompetitors.SelectedItem != null)
             {
                 var competitor = (CompetitorModel)lbCompetitors.SelectedItem;
                 DragDrop.DoDragDrop(lbCompetitors, competitor, DragDropEffects.Move);
             }
+        }
+
+        private void Draw()
+        {
+            Random random = new();
+            if (FreeSpaces() == Competitors.Count)
+            {
+                foreach (var pair in panelPairs.Children.OfType<DrawPair>().Where(d => d.Competitors == null))
+                {
+                    var comp1 = Competitors[random.Next(Competitors.Count)];
+                    Competitors.Remove(comp1);
+                    var comp2 = Competitors[random.Next(Competitors.Count)];
+                    Competitors.Remove(comp2);
+
+                    pair.Competitors = new CompetitorModel[] { comp1, comp2 };
+                }
+            }
+        }
+        private int FreeSpaces()
+        {
+            return panelPairs.Children.OfType<DrawPair>().Count(p => p.Competitors == null) * 2;
         }
     }
 }

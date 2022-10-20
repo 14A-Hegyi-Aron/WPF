@@ -7,8 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="94" d:DesignWidth="400"
              MaxHeight="94"
-             FontSize="16"
-             Drop="UserControl_Drop">
+             FontSize="16">
     <Grid Margin="5">
         <StackPanel Background="LightSteelBlue">
             <Border Height="30" Margin="20 5 20 5" CornerRadius="15" Background="White">
