@@ -1,0 +1,33 @@
+﻿<Window x:Class="TableTennisWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TableTennisWPF.pages"
+        mc:Ignorable="d"
+        Title="Ping-Pong torna" Height="450" Width="800"
+        FontSize="16"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Menu>
+            <!--https://stackoverflow.com/questions/7932060/create-a-vertical-menu-in-a-wpf-->
+            <Menu.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel Orientation="Vertical" HorizontalAlignment="Center"/>
+                </ItemsPanelTemplate>
+            </Menu.ItemsPanel>
+
+            <MenuItem Header="Nevezők" Margin="6" HorizontalAlignment="Center" 
+                      Click="MenuCompetitor_Click"/>
+            <MenuItem Header="Sorsolás" Margin="6"  HorizontalAlignment="Center"
+                      Click="MenuDraw_Click"/>
+            <MenuItem Header="Eredmények" Margin="6" HorizontalAlignment="Center"/>
+
+        </Menu>
+        <Frame Name="frame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

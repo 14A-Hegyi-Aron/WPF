@@ -1,0 +1,27 @@
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\bin\Debug\net6.0-windows\2022-10-04 TableTenisTournament.exe
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\bin\Debug\net6.0-windows\2022-10-04 TableTenisTournament.deps.json
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\bin\Debug\net6.0-windows\2022-10-04 TableTenisTournament.runtimeconfig.json
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\bin\Debug\net6.0-windows\2022-10-04 TableTenisTournament.dll
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\bin\Debug\net6.0-windows\2022-10-04 TableTenisTournament.pdb
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament.csproj.AssemblyReference.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\MainWindow.g.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\App.g.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament_MarkupCompile.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament_MarkupCompile.lref
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\MainWindow.baml
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament.g.resources
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament.GeneratedMSBuildEditorConfig.editorconfig
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament.AssemblyInfoInputs.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament.AssemblyInfo.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament.csproj.CoreCompileInputs.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament.dll
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\refint\2022-10-04 TableTenisTournament.dll
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament.pdb
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\2022-10-04 TableTenisTournament.genruntimeconfig.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\ref\2022-10-04 TableTenisTournament.dll
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\pages\HomePage.g.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\pages\HomePage.baml
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\pages\CompetitorPage.g.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\pages\DrawPage.g.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\pages\CompetitorPage.baml
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTenisTournament\obj\Debug\net6.0-windows\pages\DrawPage.baml

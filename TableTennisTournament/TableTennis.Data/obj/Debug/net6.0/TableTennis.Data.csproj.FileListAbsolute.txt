@@ -1,0 +1,36 @@
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\bin\Debug\net6.0\TableTennis.Data.deps.json
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\bin\Debug\net6.0\TableTennis.Data.dll
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\bin\Debug\net6.0\TableTennis.Data.pdb
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.csproj.AssemblyReference.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.GeneratedMSBuildEditorConfig.editorconfig
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.AssemblyInfoInputs.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.AssemblyInfo.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.csproj.CoreCompileInputs.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.dll
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\refint\TableTennis.Data.dll
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.pdb
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\ref\TableTennis.Data.dll
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\bin\Debug\net6.0\TableTennis.Data.deps.json
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\bin\Debug\net6.0\TableTennis.Data.dll
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\bin\Debug\net6.0\TableTennis.Data.pdb
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.csproj.AssemblyReference.cache
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.AssemblyInfoInputs.cache
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.AssemblyInfo.cs
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.csproj.CoreCompileInputs.cache
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.dll
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\refint\TableTennis.Data.dll
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.pdb
+Z:\Más\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\ref\TableTennis.Data.dll
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\bin\Debug\net6.0\TableTennis.Data.deps.json
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\bin\Debug\net6.0\TableTennis.Data.dll
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\bin\Debug\net6.0\TableTennis.Data.pdb
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.csproj.AssemblyReference.cache
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.AssemblyInfoInputs.cache
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.AssemblyInfo.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.csproj.CoreCompileInputs.cache
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.dll
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\refint\TableTennis.Data.dll
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\TableTennis.Data.pdb
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\TableTennis.Data\obj\Debug\net6.0\ref\TableTennis.Data.dll

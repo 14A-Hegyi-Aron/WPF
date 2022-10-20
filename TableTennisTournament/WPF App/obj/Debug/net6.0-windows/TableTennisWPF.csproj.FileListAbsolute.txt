@@ -1,0 +1,97 @@
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.csproj.AssemblyReference.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\MainWindow.g.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\CompetitorPage.g.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\DrawPage.g.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\HomePage.g.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\App.g.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF_MarkupCompile.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF_MarkupCompile.lref
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.exe
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.deps.json
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.runtimeconfig.json
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.dll
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.pdb
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\MainWindow.baml
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\CompetitorPage.baml
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\DrawPage.baml
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\HomePage.baml
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.g.resources
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.GeneratedMSBuildEditorConfig.editorconfig
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.AssemblyInfoInputs.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.AssemblyInfo.cs
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.csproj.CoreCompileInputs.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.dll
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\refint\TableTennisWPF.dll
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.pdb
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.genruntimeconfig.cache
+T:\Bognár Pál\14A WPF & Angular\2022-10-04 TableTennisTournament\WPF App\obj\Debug\net6.0-windows\ref\TableTennisWPF.dll
+Z:\Más\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.exe
+Z:\Más\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.deps.json
+Z:\Más\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.runtimeconfig.json
+Z:\Más\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.dll
+Z:\Más\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.pdb
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.csproj.AssemblyReference.cache
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\MainWindow.g.cs
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\Pages\CompetitorPage.g.cs
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\Pages\DrawPage.g.cs
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\Pages\HomePage.g.cs
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\App.g.cs
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF_MarkupCompile.cache
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF_MarkupCompile.lref
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\MainWindow.baml
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\Pages\CompetitorPage.baml
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\Pages\DrawPage.baml
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\Pages\HomePage.baml
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.g.resources
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.GeneratedMSBuildEditorConfig.editorconfig
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.AssemblyInfoInputs.cache
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.AssemblyInfo.cs
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.csproj.CoreCompileInputs.cache
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.dll
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\refint\TableTennisWPF.dll
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.pdb
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.genruntimeconfig.cache
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\ref\TableTennisWPF.dll
+Z:\Más\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+Z:\Más\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennis.Data.dll
+Z:\Más\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennis.Data.pdb
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.csproj.CopyComplete
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\App.baml
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\usercontrols\DrawPair.g.cs
+Z:\Más\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\usercontrols\DrawPair.baml
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.exe
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.deps.json
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.runtimeconfig.json
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.dll
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennisWPF.pdb
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennis.Data.dll
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\bin\Debug\net6.0-windows\TableTennis.Data.pdb
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.csproj.AssemblyReference.cache
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\CompetitorPage.g.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\DrawPage.g.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\HomePage.g.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\usercontrols\DrawPair.g.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\App.g.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF_MarkupCompile.cache
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF_MarkupCompile.lref
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\App.baml
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\MainWindow.baml
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\CompetitorPage.baml
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\DrawPage.baml
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\HomePage.baml
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\usercontrols\DrawPair.baml
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.g.resources
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.GeneratedMSBuildEditorConfig.editorconfig
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.AssemblyInfoInputs.cache
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.AssemblyInfo.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.csproj.CoreCompileInputs.cache
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.csproj.CopyComplete
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.dll
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\refint\TableTennisWPF.dll
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.pdb
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.genruntimeconfig.cache
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\ref\TableTennisWPF.dll

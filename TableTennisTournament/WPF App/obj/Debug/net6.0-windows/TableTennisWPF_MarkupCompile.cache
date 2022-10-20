@@ -1,0 +1,20 @@
+﻿TableTennisWPF
+
+
+winexe
+C#
+.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\
+TableTennisWPF
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\App.xaml
+5322748075
+
+11-1612632643
+196-73723041
+MainWindow.xaml;pages\CompetitorPage.xaml;pages\DrawPage.xaml;pages\HomePage.xaml;usercontrols\DrawPair.xaml;
+
+False
+

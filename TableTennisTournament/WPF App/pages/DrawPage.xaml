@@ -1,0 +1,35 @@
+﻿<Page xmlns:usercontrols="clr-namespace:TableTennisWPF.usercontrols"  x:Class="TableTennisWPF.pages.DrawPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TableTennisWPF.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DrawPage"
+      FontSize="16"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer VerticalScrollBarVisibility="Auto" >
+            <StackPanel Name="panelPairs">
+            </StackPanel>
+        </ScrollViewer>
+        <ListBox Grid.Column="1" Margin="5" Name="lbCompetitors" MouseMove="lbCompetitors_MouseMove">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="{Binding Number}" />
+                        <Label Content="{Binding Name}" FontWeight="Bold"/>
+                        <Label Content="{Binding BirthDay}" ContentStringFormat="({0:dd.MM.yyyy})"/>
+                        <Label Content="{Binding Rank}" ContentStringFormat="- {0}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Page>
