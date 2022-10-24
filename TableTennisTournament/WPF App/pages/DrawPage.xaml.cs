@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,21 +37,38 @@ namespace TableTennisWPF.pages
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            Competitors = new ObservableCollection<CompetitorModel>(repository.GetAll());
-            lbCompetitors.ItemsSource = Competitors;
-            int n = Competitors.Count;
-            int pairs = (int)Math.Pow(2, Math.Ceiling(Math.Log2(n)) - 1);
-
-            for (int i = 0; i < pairs; i++)
+            if (File.Exists("draw.json"))
             {
-                var pair = new DrawPair()
+                var json = File.ReadAllText("draw.json", Encoding.UTF8);
+                var pairs = JsonConvert.DeserializeObject<DrawModel[]>(json);
+                foreach (var pair in pairs)
                 {
-                    AllowDrop = true,
-                };
-                pair.Drop += Pair_Drop;
-                panelPairs.Children.Add(pair);
+                    var drawPair = new DrawPair()
+                    {
+                        Competitors = pair.Competitors,
+                    };
+                    panelPairs.Children.Add(drawPair);
+                }
+                lbCompetitors.Visibility = Visibility.Hidden;
             }
-            Draw();
+            else
+            {
+                Competitors = new ObservableCollection<CompetitorModel>(repository.GetAll());
+                lbCompetitors.ItemsSource = Competitors;
+                int n = Competitors.Count;
+                int pairs = (int)Math.Pow(2, Math.Ceiling(Math.Log2(n)) - 1);
+
+                for (int i = 0; i < pairs; i++)
+                {
+                    var pair = new DrawPair()
+                    {
+                        AllowDrop = true,
+                    };
+                    pair.Drop += Pair_Drop;
+                    panelPairs.Children.Add(pair);
+                }
+                Draw();
+            }
         }
 
         private void Pair_Drop(object sender, DragEventArgs e)
@@ -92,7 +111,25 @@ namespace TableTennisWPF.pages
 
                     pair.Competitors = new CompetitorModel[] { comp1, comp2 };
                 }
+                SaveDraw();
             }
+        }
+
+        private void SaveDraw()
+        {
+            var drawPairs = panelPairs.Children.OfType<DrawPair>().ToList();
+            List<DrawModel> draws = new();
+            for (int i = 0; i < drawPairs.Count; i++)
+            {
+                draws.Add(new DrawModel()
+                {
+                    TableId = i,
+                    Competitors = drawPairs[i].Competitors
+                });
+            }
+            var json = JsonConvert.SerializeObject(draws);
+            File.WriteAllText("draw.json", json, Encoding.UTF8);
+
         }
         private int FreeSpaces()
         {

@@ -95,3 +95,7 @@ D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\ref
 D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.pdb
 D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\TableTennisWPF.genruntimeconfig.cache
 D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\ref\TableTennisWPF.dll
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\ResultsPage.g.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\usercontrols\ResultControl.g.cs
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\pages\ResultsPage.baml
+D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\usercontrols\ResultControl.baml

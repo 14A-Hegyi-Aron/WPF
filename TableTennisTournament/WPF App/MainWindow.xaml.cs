@@ -40,5 +40,10 @@ namespace TableTennisWPF
         {
             frame.Content = new DrawPage();
         }
+
+        private void MenuResults_Click(object sender, RoutedEventArgs e)
+        {
+            frame.Content = new ResultsPage();
+        }
     }
 }

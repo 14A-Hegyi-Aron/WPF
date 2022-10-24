@@ -16,7 +16,13 @@
     <Compile Update="pages\HomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="pages\ResultsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="usercontrols\DrawPair.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="usercontrols\ResultControl.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -33,7 +39,13 @@
     <Page Update="pages\HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="pages\ResultsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="usercontrols\DrawPair.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="usercontrols\ResultControl.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

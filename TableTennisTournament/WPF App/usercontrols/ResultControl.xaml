@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="TableTennisWPF.usercontrols.ResultControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TableTennisWPF.usercontrols"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="800" MaxHeight="100" MinWidth="300"
+             FontSize="16">
+    <Grid Background="LightSkyBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
+            <Label Name="lblName1" Content="Player 1" FontWeight="Bold" />
+            <Label Name="lbVs" Content="-"/>
+            <Label Name="lblName2" Content="Player 2" />
+        </StackPanel>
+        <StackPanel x:Name="panelResults" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
+            <Label Name="lblMatch1" Content="11 - 1" Margin="10 0 10 0" />
+            <Label Name="lblMatch2" Content="9 - 11" Margin="10 0 10 0" />
+            <Label Name="lblMatch3" Content="11 - 1" Margin="10 0 10 0" />
+        </StackPanel>
+        <Button x:Name="btnResults" Grid.Row="1" Height="30" Width="150" Margin="0 0 8 8" Content="Eredmény rögzítése" />
+    </Grid>
+</UserControl>

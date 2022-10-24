@@ -25,7 +25,8 @@
                       Click="MenuCompetitor_Click"/>
             <MenuItem Header="Sorsolás" Margin="6"  HorizontalAlignment="Center"
                       Click="MenuDraw_Click"/>
-            <MenuItem Header="Eredmények" Margin="6" HorizontalAlignment="Center"/>
+            <MenuItem Header="Eredmények" Margin="6" HorizontalAlignment="Center"
+                      Click="MenuResults_Click"/>
 
         </Menu>
         <Frame Name="frame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
