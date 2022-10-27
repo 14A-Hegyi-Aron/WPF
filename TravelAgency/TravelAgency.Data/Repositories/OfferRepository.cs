@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +7,9 @@ using TravelAgency.Data.Models;
 
 namespace TravelAgency.Data.Repositories
 {
-    public class HotelRepository : GenericRepository<HotelModel>
+    public class OfferRepository : GenericRepository<OfferModel>
     {
-        public HotelRepository(string fileName = "hotels.json") : base(fileName)
+        public OfferRepository(string fileName = "offers.json") : base(fileName)
         { }
     }
 }

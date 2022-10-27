@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace TravelAgency.Data.Models
 {
-    public class TravelModeModel : IModelWithId
+    public interface IModelWithId
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        int Id { get; set; }
     }
 }
