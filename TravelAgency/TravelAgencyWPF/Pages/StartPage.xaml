@@ -1,0 +1,21 @@
+﻿<Page x:Class="TravelAgencyWPF.Pages.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TravelAgencyWPF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StartPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label Grid.Row="1" Content="Szállodák adatai" FontSize="36" FontWeight="Bold" Cursor="Hand" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonUp="Hotels_MouseLeftButtonUp" />
+        <Label Grid.Row="2" Content="Utazások adatai" Cursor="Hand" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonUp="Offers_MouseLeftButtonUp" />
+    </Grid>
+</Page>

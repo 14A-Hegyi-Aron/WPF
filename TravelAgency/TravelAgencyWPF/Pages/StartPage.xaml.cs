@@ -12,23 +12,27 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TravelAgencyWPF.Pages;
 
-namespace TravelAgencyWPF
+namespace TravelAgencyWPF.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for StartPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class StartPage : Page
     {
-        public MainWindow()
+        public StartPage()
         {
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void Hotels_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
-            frame.Content = new StartPage();
+            NavigationService.Content = new HotelsPage();
+        }
+
+        private void Offers_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Content = new OffersPage();
         }
     }
 }

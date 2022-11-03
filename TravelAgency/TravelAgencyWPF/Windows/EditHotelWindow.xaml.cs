@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TravelAgencyWPF.Pages;
 
-namespace TravelAgencyWPF
+namespace TravelAgencyWPF.Windows
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for EditHotelWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class EditHotelWindow : Window
     {
-        public MainWindow()
+        public EditHotelWindow()
         {
             InitializeComponent();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            frame.Content = new StartPage();
         }
     }
 }

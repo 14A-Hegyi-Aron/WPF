@@ -4,6 +4,56 @@
              xmlns:local="clr-namespace:TravelAgencyWPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <Style TargetType="DataGridColumnHeader">
+                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                <Setter Property="FontWeight" Value="Bold" />
+            </Style>
+            <Style TargetType="Grid">
+                <Setter Property="Background" Value="#333" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="Foreground" Value="#d0ddff" />
+            </Style>
+            <Style TargetType="DataGrid">
+                <Setter Property="Background" Value="#353535" />
+                <Setter Property="BorderBrush" Value="#444" />
+                <Setter Property="BorderThickness" Value="2" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="Background" Value="#333" />
+                <Setter Property="Foreground" Value="#d0ddff" />
+                <Setter Property="BorderBrush" Value="#444" />
+                <Setter Property="BorderThickness" Value="2" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="Padding" Value="5" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="2">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="border" Property="Background" Value="#444" />
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter TargetName="border" Property="Background" Value="#555" />
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+            <Style TargetType="RadioButton">
+                <Setter Property="Background" Value="#333" />
+                <Setter Property="Foreground" Value="#d0ddff" />
+                <Setter Property="BorderBrush" Value="#444" />
+                <Setter Property="BorderThickness" Value="2" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+                <Setter Property="Padding" Value="5" />
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
