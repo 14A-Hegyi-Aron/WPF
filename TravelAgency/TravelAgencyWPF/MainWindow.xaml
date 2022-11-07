@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TravelAgencyWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" FontSize="16" Loaded="Window_Loaded" Foreground="White">
-    <Frame NavigationUIVisibility="Hidden" x:Name="frame">
+        Title="MainWindow" Height="450" Width="800" FontSize="16" 
+        Loaded="Window_Loaded">
+    <Frame Name="frame" NavigationUIVisibility="Hidden">
         
     </Frame>
 </Window>

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace TravelAgencyWPF.Pages
+namespace TravelAgencyWPF.pages
 {
     /// <summary>
     /// Interaction logic for StartPage.xaml

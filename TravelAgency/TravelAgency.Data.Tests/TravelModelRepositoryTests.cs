@@ -5,7 +5,7 @@ using TravelAgency.Data.Repositories;
 
 namespace TravelAgency.Data.Tests
 {
-    public class TravelModelRepositoryTests : IDisposable
+    public class TravelModelRepositoryTests: IDisposable
     {
         string fileName;
 
@@ -75,15 +75,15 @@ namespace TravelAgency.Data.Tests
         public void NewModeToNotExistingFile()
         {
             File.Delete(fileName);
-            TravelModeRepository repository = new(fileName);
-            TravelModeModel model = new()
+            var repository = new TravelModeRepository(fileName);
+            var model = new TravelModeModel()
             {
                 Name = "busz"
             };
-            TravelModeModel insertedMOdel = repository.Insert(model);
+            TravelModeModel insertedModel = repository.Insert(model);
 
-            Assert.Equal(1, insertedMOdel.Id);
-            Assert.Equal("busz", insertedMOdel.Name);
+            Assert.Equal(1, insertedModel.Id);
+            Assert.Equal("busz", insertedModel.Name);
             IEnumerable<TravelModeModel> modes = repository.GetAll();
             Assert.Single(modes);
             Assert.Equal("busz", modes.Single(m => m.Id == 1).Name);
@@ -102,7 +102,7 @@ namespace TravelAgency.Data.Tests
             TravelModeModel updatedModel = repository.Update(model);
             Assert.Equal(2, updatedModel.Id);
             Assert.Equal("repülõgép", updatedModel.Name);
-
+            
             IEnumerable<TravelModeModel> modes = repository.GetAll();
             Assert.Equal(3, modes.Count());
             Assert.Equal("repülõgép", modes.Single(m => m.Id == 2).Name);

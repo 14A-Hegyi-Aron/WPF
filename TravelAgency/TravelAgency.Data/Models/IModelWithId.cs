@@ -8,6 +8,6 @@ namespace TravelAgency.Data.Models
 {
     public interface IModelWithId
     {
-        int Id { get; set; }
+        public int Id { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TravelAgency.Data.Models
 {
-    public class TravelModeModel : IModelWithId
+    public class TravelModeModel: IModelWithId
     {
         public int Id { get; set; }
         public string Name { get; set; }

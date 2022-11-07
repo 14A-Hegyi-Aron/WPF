@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using TravelAgency.Data.Models;
 
 namespace TravelAgency.Data.Repositories
@@ -12,7 +11,7 @@ namespace TravelAgency.Data.Repositories
     {
         protected readonly string fileName;
 
-        public GenericRepository(string fileName = "travelmode.json")
+        public GenericRepository(string fileName)
         {
             this.fileName = fileName;
         }
@@ -29,41 +28,44 @@ namespace TravelAgency.Data.Repositories
 
         public virtual T Insert(T model)
         {
-            var modes = GetAll().ToList();
-            if (modes.Count > 0)
-                model.Id = modes.Max(m => m.Id) + 1;
+            var list = GetAll().ToList();
+            if (list.Count > 0)
+                model.Id = list.Max(i => i.Id) + 1;
             else
                 model.Id = 1;
-            modes.Add(model);
-            WriteData(modes);
+            list.Add(model);
+            WriteData(list);
             return model;
         }
 
         public virtual T Update(T model)
         {
-            var modes = GetAll().ToList();
-            var modelToModify = modes.SingleOrDefault(m => m.Id == model.Id);
+            var list = GetAll().ToList();
+            var modelToModify = list.SingleOrDefault(m => m.Id == model.Id);
             if (modelToModify == null)
-                throw new KeyNotFoundException($"Travel mode with id {model.Id} not found");
-            var index = modes.IndexOf(modelToModify);
-            modes[index] = model;
-            WriteData(modes);
+                throw new KeyNotFoundException();
+            var index = list.IndexOf(modelToModify);
+            list.RemoveAt(index);
+            list.Insert(index, model);
+            WriteData(list);
             return model;
         }
+
         public virtual void Delete(int id)
         {
-            var modes = GetAll().ToList();
-            var modelToDelete = modes.SingleOrDefault(m => m.Id == id);
+            var list = GetAll().ToList();
+            var modelToDelete = list.SingleOrDefault(m => m.Id == id);
             if (modelToDelete == null)
-                throw new KeyNotFoundException($"Travel mode with id {id} not found");
-            modes.Remove(modelToDelete);
-            WriteData(modes);
+                throw new KeyNotFoundException();
+            list.Remove(modelToDelete);
+            WriteData(list);
         }
 
-        private void WriteData(IEnumerable<T> data)
+        private void WriteData(IEnumerable<T> list)
         {
-            var json = JsonConvert.SerializeObject(data, Formatting.Indented);
+            var json = JsonConvert.SerializeObject(list);
             File.WriteAllText(fileName, json, Encoding.UTF8);
+
         }
     }
 }
