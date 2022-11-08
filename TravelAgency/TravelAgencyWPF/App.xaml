@@ -61,18 +61,15 @@
                 <Setter Property="BorderBrush" Value="#444" />
                 <Setter Property="BorderThickness" Value="2" />
             </Style>
-            <!--style for DataGrid-->
             <Style TargetType="DataGridCell">
                 <Setter Property="Background" Value="#333" />
                 <Setter Property="Foreground" Value="#d0ddff" />
                 <Setter Property="BorderBrush" Value="#444" />
-                <Setter Property="BorderThickness" Value="2" />
             </Style>
             <Style TargetType="DataGridRow">
                 <Setter Property="Background" Value="#333" />
                 <Setter Property="Foreground" Value="#d0ddff" />
                 <Setter Property="BorderBrush" Value="#444" />
-                <Setter Property="BorderThickness" Value="2" />
             </Style>
             <Style TargetType="DataGridRowHeader">
                 <Setter Property="Background" Value="#333" />
@@ -80,7 +77,25 @@
                 <Setter Property="BorderBrush" Value="#444" />
                 <Setter Property="BorderThickness" Value="2" />
             </Style>
-            
+            <Style TargetType="ComboBox">
+                <Setter Property="Background" Value="#333" />
+                <Setter Property="Foreground" Value="#d0ddff" />
+                <Setter Property="BorderBrush" Value="#444" />
+                <Setter Property="BorderThickness" Value="2" />
+                <Setter Property="FontWeight" Value="Bold" />
+            </Style>
+            <Style TargetType="GroupBox">
+                <Setter Property="Background" Value="#333" />
+                <Setter Property="Foreground" Value="#d0ddff" />
+                <Setter Property="FontWeight" Value="Bold" />
+                <Setter Property="HeaderTemplate">
+                    <Setter.Value>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding}" FontSize="30"/>
+                        </DataTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

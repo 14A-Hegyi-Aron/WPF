@@ -13,7 +13,7 @@
             <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <DataGrid Name="dgHotels" Margin="8" IsReadOnly="True">
+        <DataGrid Name="dgHotels" Margin="8" IsReadOnly="True" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Szálloda neve" Width="250" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Szálloda címe" Width="200" Binding="{Binding Address}"/>
