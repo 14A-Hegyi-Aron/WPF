@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Busz"
+  },
+  {
+    "id": 2,
+    "name": "Autó"
+  },
+  {
+    "id": 3,
+    "name": "Repülőgép"
+  },
+  {
+    "id": 4,
+    "name": "Hajó"
+  }
+]
