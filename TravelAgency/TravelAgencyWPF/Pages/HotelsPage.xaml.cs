@@ -46,7 +46,6 @@ namespace TravelAgencyWPF.pages
             {
                 hotels.Add(wnd.SavedModel);
             }
-            
         }
 
         private void Modify_Click(object sender, RoutedEventArgs e)
@@ -68,7 +67,8 @@ namespace TravelAgencyWPF.pages
             if (dgHotels.SelectedItem != null)
             {
                 var model = (HotelModel)dgHotels.SelectedItem;
-                if (MessageBox.Show($"Are you sure you want to delete {model.Name}?", "Delete", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                var message = $"Biztos törölni szeretné a {model.Name} nevű szállodát?";
+                if (MessageBox.Show(message, "Megerősítés", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                 {
                     repository.Delete(model.Id);
                     hotels.Remove(model);

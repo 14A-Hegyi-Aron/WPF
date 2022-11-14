@@ -1,0 +1,61 @@
+﻿<Window x:Class="TravelAgencyWPF.Windows.EditOffersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TravelAgencyWPF.Windows"
+        mc:Ignorable="d"
+        Title="Ajánlatok szerkesztése" Height="350" Width="600" 
+        FontSize="16" ResizeMode="NoResize"
+        Loaded="Window_Loaded">
+    <Grid x:Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Name="lblDestination" Content="Úti cél:" Grid.Row="0" VerticalAlignment="Center" Margin="8 0 8 0"/>
+        <Label Name="lblMode" Content="Utazási mód:" Grid.Row="1" VerticalAlignment="Center" Margin="8 0 8 0"/>
+        <Label Name="lblDates" Content="Indulás, érkezés:" Grid.Row="2" VerticalAlignment="Center" Margin="8 0 8 0"/>
+        <Label Name="lblHotel" Content="Szálloda:" Grid.Row="3" VerticalAlignment="Center" Margin="8 0 8 0"/>
+        <Label Name="lblPrice" Content="Utazása ára:" Grid.Row="4" VerticalAlignment="Center" Margin="8 0 8 0"/>
+        <Label Name="lbldescription" Content="Leírás:" Grid.Row="5" VerticalAlignment="Center" Margin="8 0 8 0"/>
+        <Label Name="lblMaxParticipants" Content="Résztvevők max száma:" Grid.Row="6" VerticalAlignment="Center" Margin="8 0 8 0"/>
+
+        <TextBox Grid.Column="1" Grid.Row="0" VerticalContentAlignment="Center" Height="28" Margin="0 0 8 0"
+                 Text="{Binding Destination}"/>
+        <ComboBox Grid.Column="1" Grid.Row="1" VerticalContentAlignment="Center" Height="28" Margin="0 0 8 0"
+                 Name="cboTravelMode" SelectedValue="{Binding ModeId}"/>
+        <WrapPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
+            <DatePicker Grid.Column="1" Grid.Row="0" Height="28" Width="130"
+                             VerticalContentAlignment="Center" SelectedDate="{Binding StartDate}"/>
+            <Label Content="-"/>
+            <DatePicker Grid.Column="1" Grid.Row="0" Height="28" Width="130"
+                             VerticalContentAlignment="Center" SelectedDate="{Binding EndDate}"/>
+        </WrapPanel>
+        <ComboBox Grid.Column="1" Grid.Row="3" VerticalContentAlignment="Center" Height="28" Margin="0 0 8 0"
+                 Name="cboHotel" SelectedValue="{Binding HotelId}"/>
+        <TextBox Grid.Column="1" Grid.Row="4" VerticalContentAlignment="Center" Height="28" Width="130"
+                 HorizontalAlignment="Left" Margin="0 0 8 0" Text="{Binding Price}"/>
+        <Border BorderThickness="1" BorderBrush="#444" Grid.Column="1" Grid.Row="5" Height="60" Margin="0 0 8 0">
+            <TextBlock Text="{Binding Description}" />
+        </Border>
+        <TextBox Grid.Column="1" Grid.Row="6" VerticalContentAlignment="Center" Height="28" Width="130"
+                 HorizontalAlignment="Left" Margin="0 0 8 0" Text="{Binding MaxParticipants}"/>
+
+        <WrapPanel HorizontalAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2" VerticalAlignment="Center">
+            <Button Width="120" Height="26" Content="Mentés" Margin="8 0 8 0" Click="Save_Click"/>
+            <Button Width="120" Height="26" Content="Mégsem" Margin="8 0 8 0" Click="Cancel_Click" />
+        </WrapPanel>
+
+    </Grid>
+</Window>

@@ -5,18 +5,17 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:TravelAgencyWPF.pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="OffersPage"
-      FontSize="16"
-      Loaded="Page_Loaded">
+      d:DesignHeight="450" d:DesignWidth="800" FontSize="16"
+      Title="OffersPage" Loaded="Page_Loaded">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="150"/>
-            <RowDefinition />
+            <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <GroupBox x:Name="grpSearch" Header="Keresés" Margin="8">
+        
+        <GroupBox Header="Keresés" Margin="8" Name="grpSearch">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition />
@@ -24,41 +23,51 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Content="Úti cél:" VerticalAlignment="Center" Margin="8 0" />
-                <Label Grid.Row="1" Grid.Column="0" Content="Utazási mód:" VerticalAlignment="Center" Margin="8 0" />
-                <Label Grid.Row="2" Grid.Column="0" Content="Utazás ára::" VerticalAlignment="Center" Margin="8 0" />
-                <TextBox Grid.Row="0" Grid.Column="1" Height="24" Text="asd" VerticalContentAlignment="Center" />
-                <ComboBox Name="cboTravelMode" Grid.Row="1" Grid.Column="1" Height="24" VerticalContentAlignment="Center" />
-                <StackPanel VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
-                    <TextBox Height="24" Width="90" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" />
-                    <Label Content="-" VerticalAlignment="Center" Margin="8 0" />
-                    <TextBox Height="24" Width="90" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" LostFocus="Price_LostFocus"/>
-                </StackPanel>
-                <StackPanel Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Orientation="Horizontal">
-                    <Button Content="Keresés" Height="24" Width="90" Margin="8 0" Click="Delete_Click" />
-                    <Button Content="Törlés" Height="24" Width="90" Margin="8 0" Click="Search_Click" />
+                <Label Grid.Row="0" Content="Úti cél:" VerticalAlignment="Center" Margin="8 0 8 0"/>
+                <Label Grid.Row="1" Content="Utazási mód:" VerticalAlignment="Center" Margin="8 0 8 0"/>
+                <Label Grid.Row="2" Content="Utazás ára:" VerticalAlignment="Center" Margin="8 0 8 0"/>
+
+                <TextBox Grid.Column="1" Grid.Row="0" Height="24" VerticalContentAlignment="Center"
+                         Text="{Binding Destination}"/>
+                <ComboBox Name="cboTravelMode" Grid.Column="1" Grid.Row="1" Height="24" VerticalContentAlignment="Center"
+                          SelectedValue="{Binding TravelMode}"/>
+                <WrapPanel Grid.Column="1" Grid.Row="2" VerticalAlignment="Center">
+                    <TextBox Grid.Column="1" Grid.Row="0" Height="24" Width="90" HorizontalContentAlignment="Right"
+                             VerticalContentAlignment="Center" Text="{Binding PriceFrom}"
+                             LostFocus="Price_LostFocus"/>
+                    <Label Content="-"/>
+                    <TextBox Grid.Column="1" Grid.Row="0" Height="24" Width="90" HorizontalContentAlignment="Right"
+                             VerticalContentAlignment="Center" Text="{Binding PriceTo}"
+                             LostFocus="Price_LostFocus"/>
+                </WrapPanel>
+
+                <StackPanel Grid.Column="2" Grid.RowSpan="3" VerticalAlignment="Center">
+                    <Button Content="Keresés" Width="120" Margin="4" Click="Search_Click"/>
+                    <Button Content="Felt. törlése" Width="120" Margin="4" Click="ClearFilters_Click"/>
                 </StackPanel>
             </Grid>
         </GroupBox>
-        <DataGrid Grid.Row="1" Name="dgHotels" Margin="8" IsReadOnly="True" AutoGenerateColumns="False">
+
+        <DataGrid Name="dgOffers" Margin="8" IsReadOnly="True" AutoGenerateColumns="False" Grid.Row="1">
             <DataGrid.Columns>
-                <!--destination, travelmode, startdate, enddate, hotelname, price-->
-                <DataGridTextColumn Header="Úti cél" Binding="{Binding Destination}" Width="200"/>
-                <DataGridTextColumn Header="Utazási mód" Binding="{Binding ModeName}" Width="120"/>
-                <DataGridTextColumn Header="Indulás" Binding="{Binding StartDate, StringFormat=yyyy.MM.dd}" Width="100" />
-                <DataGridTextColumn Header="Érkezés" Binding="{Binding EndDate, StringFormat=yyyy.MM.dd}" Width="100" />
-                <DataGridTextColumn Header="Hotel neve" Binding="{Binding HotelName}" Width="150"/>
-                <DataGridTextColumn Header="Ár" Binding="{Binding Price, StringFormat={}{0:N0} Ft}" Width="100" />
+                <DataGridTextColumn Header="Úti cél" Width="200" Binding="{Binding Destination}" />
+                <DataGridTextColumn Header="Utazási mód" Width="120" Binding="{Binding ModeName}" />
+                <DataGridTextColumn Header="Indulás" Width="100" Binding="{Binding StartDate, StringFormat=yyyy.MM.dd}" />
+                <DataGridTextColumn Header="Érkezés" Width="100" Binding="{Binding EndDate, StringFormat=yyyy.MM.dd}" />
+                <DataGridTextColumn Header="Hotel neve" Width="150" Binding="{Binding HotelName}" />
+                <DataGridTextColumn Header="Utazás ára" Width="120" Binding="{Binding Price}" />
             </DataGrid.Columns>
         </DataGrid>
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Új" Height="24" Width="90" Margin="8" Click="New_Click" />
-            <Button Content="Mégse" Height="24" Width="90" Margin="8" Click="Cancel_Click" />
-        </StackPanel>
-    <Button Width="30" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,8,8,0" FontFamily="Wingdings" Content="ß" Click="Back_Click" Grid.Column="1" />
+        <WrapPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="Új" Width="120" Height="28" Margin="10 0 10 0" Click="New_Click"/>
+            <Button Content="Módosítás" Width="120" Height="28" Margin="10 0 10 0" Click="Modify_Click"/>
+            <Button Content="Törlés" Width="120" Height="28" Margin="10 0 10 0" Click="Delete_Click"/>
+        </WrapPanel>
+        <Button Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" FontFamily="Wingdings" 
+                Content="ß" Click="Back_Click" Margin="8"/>
     </Grid>
 </Page>

@@ -11,10 +11,4 @@
     <ProjectReference Include="..\TravelAgency.Data\TravelAgency.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="travelMode.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

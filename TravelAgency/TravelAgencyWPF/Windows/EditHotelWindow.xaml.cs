@@ -39,7 +39,7 @@ namespace TravelAgencyWPF.windows
 
             if (CheckData(model))
             {
-                HotelRepository repository = new();
+                var repository = new HotelRepository();
                 if (model.Id == 0)
                     this.SavedModel = repository.Insert(model);
                 else

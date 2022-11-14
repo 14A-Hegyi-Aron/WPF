@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using TravelAgency.Data.Models;
 using TravelAgency.Data.Repositories;
+using TravelAgencyWPF.Windows;
 
 namespace TravelAgencyWPF.pages
 {
@@ -22,41 +24,53 @@ namespace TravelAgencyWPF.pages
     /// </summary>
     public partial class OffersPage : Page
     {
-        private OfferSearchModel searchModel = new();
         public OffersPage()
         {
             InitializeComponent();
         }
+
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            TravelModeRepository travelModeRepository = new();
+            var travelModeRepository = new TravelModeRepository();
             cboTravelMode.ItemsSource = travelModeRepository.GetAll();
             cboTravelMode.DisplayMemberPath = "Name";
 
-            grpSearch
-        }
-
-        private void New_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-
-        private void Cancel_Click(object sender, RoutedEventArgs e)
-        {
-
+            grpSearch.DataContext = new OfferSearchModel();
         }
 
         private void Search_Click(object sender, RoutedEventArgs e)
         {
+            var offerRepository = new OfferRepository();
+            dgOffers.ItemsSource = new ObservableCollection<OfferModel>
+            (
+                offerRepository.Search((OfferSearchModel)grpSearch.DataContext)
+            );
+        }
+
+        private void ClearFilters_Click(object sender, RoutedEventArgs e)
+        {
+            grpSearch.DataContext = new OfferSearchModel();
+        }
+
+        private void New_Click(object sender, RoutedEventArgs e)
+        {
+            var wnd = new EditOffersWindow(new OfferModel());
+            if (wnd.ShowDialog() == true)
+            {
+
+            }
+        }
+
+        private void Modify_Click(object sender, RoutedEventArgs e)
+        {
 
         }
-    
+
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
 
         }
-        
+
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
@@ -64,11 +78,9 @@ namespace TravelAgencyWPF.pages
 
         private void Price_LostFocus(object sender, RoutedEventArgs e)
         {
-            var textBox = sender as TextBox;
+            var textBox = (TextBox)sender;
             if (!decimal.TryParse(textBox.Text, out decimal x))
-            {
                 textBox.Text = null;
-            }
         }
     }
 }

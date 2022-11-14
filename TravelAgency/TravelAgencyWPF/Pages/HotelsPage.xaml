@@ -9,15 +9,11 @@
       Title="HotelsPage" FontSize="16" Loaded="Page_Loaded">
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <DataGrid Name="dgHotels" Margin="8,8,8,8" IsReadOnly="True" AutoGenerateColumns="False" Grid.ColumnSpan="2">
+        <DataGrid Name="dgHotels" Margin="8" IsReadOnly="True" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Szálloda neve" Width="250" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Szálloda címe" Width="200" Binding="{Binding Address}"/>
@@ -26,11 +22,13 @@
                 <DataGridTextColumn Header="Leírás" Width="400" Binding="{Binding Description}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <WrapPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="190,0,0,0">
+        <WrapPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Content="Új" Width="120" Height="28" Margin="10 0 10 0" Click="New_Click"/>
             <Button Content="Módosítás" Width="120" Height="28" Margin="10 0 10 0" Click="Modify_Click"/>
             <Button Content="Törlés" Width="120" Height="28" Margin="10 0 10 0" Click="Delete_Click"/>
         </WrapPanel>
-        <Button Width="30" Height="32" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,8,8,0" FontFamily="Wingdings" Content="ß" Click="Back_Click" Grid.Column="1" />
+        <Button Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" FontFamily="Wingdings" 
+                Content="ß" Click="Back_Click" Margin="8"/>
+
     </Grid>
 </Page>
