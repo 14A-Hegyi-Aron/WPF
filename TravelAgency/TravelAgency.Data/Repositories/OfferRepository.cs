@@ -10,5 +10,16 @@ namespace TravelAgency.Data.Repositories
     {
         public OfferRepository(string fileName = "offers.json"): base(fileName)
         {  }
+
+        public IEnumerable<OfferModel> Search(OfferSearchModel model)
+        {
+            return this.GetAll().Where
+            (
+                o => (o.Destination.Contains(model.Destination))
+                  && (model.TravelMode == null || o.ModeId == model.TravelMode.Id)
+                  && (model.PriceFrom == null || o.Price >= model.PriceFrom)
+                  && (model.PriceTo == null || o.Price <= model.PriceTo)
+            );
+        }
     }
 }

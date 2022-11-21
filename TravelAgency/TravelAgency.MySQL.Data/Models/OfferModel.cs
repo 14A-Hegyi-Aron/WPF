@@ -20,28 +20,8 @@ namespace TravelAgency.Data.Models
         public int MaxParticipants { get; set; }
         public byte[] Photo { get; set; }
 
-        [JsonIgnore]
-        public string ModeName
-        {
-            get
-            {
-                var repo = new TravelModeRepository();
-                var mode = repo.GetAll().SingleOrDefault(t => t.Id == this.ModeId);
-                if (mode == null)
-                    return null;
-                return mode.Name;
-            }
-        }
-
-        [JsonIgnore]
-        public string HotelName
-        {
-            get
-            {
-                var repo = new HotelRepository();
-                return repo.GetAll().SingleOrDefault(h => h.Id == this.HotelId)?.Name;
-            }
-        }
+        public string ModeName { get; set; }
+        public string HotelName { get; set; }
 
 
     }

@@ -14,19 +14,21 @@ using System.Windows.Shapes;
 using TravelAgency.Data.Models;
 using TravelAgency.Data.Repositories;
 
-namespace TravelAgencyWPF.Windows
+namespace TravelAgencyWPF.windows
 {
     /// <summary>
-    /// Interaction logic for EditOffersWindow.xaml
+    /// Interaction logic for EditOfferWindow.xaml
     /// </summary>
-    public partial class EditOffersWindow : Window
+    public partial class EditOfferWindow : Window
     {
         public OfferModel SavedModel { get; set; }
-        public EditOffersWindow(OfferModel model)
+
+        public EditOfferWindow(OfferModel model)
         {
             InitializeComponent();
             this.DataContext = model;
         }
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var hotelRepo = new HotelRepository();
@@ -35,9 +37,9 @@ namespace TravelAgencyWPF.Windows
             cboHotel.SelectedValuePath = "Id";
 
             var travelModeRepo = new TravelModeRepository();
-            cboTravelMode.ItemsSource = hotelRepo.GetAll();
-            cboTravelMode.DisplayMemberPath = "Name";
-            cboTravelMode.SelectedValuePath = "Id";
+            cboTravelModel.ItemsSource = travelModeRepo.GetAll();
+            cboTravelModel.DisplayMemberPath = "Name";
+            cboTravelModel.SelectedValuePath = "Id";
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
@@ -80,17 +82,12 @@ namespace TravelAgencyWPF.Windows
                 lblDates.Foreground = Brushes.Red;
                 ok = false;
             }
-            if (model.HotelId == 0)
-            {
-                lblHotel.Foreground = Brushes.Red;
-                ok = false;
-            }
-            if (model.Price == 0)
+            if (model.Price <= 0)
             {
                 lblPrice.Foreground = Brushes.Red;
                 ok = false;
             }
-            if (model.MaxParticipants == 0)
+            if (model.MaxParticipants <= 0)
             {
                 lblMaxParticipants.Foreground = Brushes.Red;
                 ok = false;
@@ -101,13 +98,13 @@ namespace TravelAgencyWPF.Windows
         }
 
         private bool GetHasError(Panel parentPanel)
-        {
-            foreach (var uIElement in parentPanel.Children.OfType<UIElement>())
+        {                        
+            foreach (var uiElement in parentPanel.Children.OfType<UIElement>())
             {
-                if (Validation.GetHasError(uIElement))
+                if (Validation.GetHasError(uiElement))
                     return true;
-                if (uIElement is Panel)
-                    if (GetHasError((Panel)uIElement))
+                if (uiElement is Panel)
+                    if (this.GetHasError((Panel)uiElement))
                         return true;
             }
             return false;
@@ -115,8 +112,8 @@ namespace TravelAgencyWPF.Windows
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-
+            this.DialogResult = false;
+            this.Close();
         }
-
     }
 }
