@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using TravelAgency.Data.Models;
@@ -12,7 +13,9 @@ namespace TravelAgency.Data.Repositories
     {
         private readonly string connectionString;
         public HotelRepository()
-        { }
+        {
+            this.connectionString = ConfigurationManager.ConnectionStrings["travels"].ConnectionString;
+        }
 
         public HotelRepository(string connectionString)
         {
@@ -53,17 +56,57 @@ namespace TravelAgency.Data.Repositories
 
         public HotelModel Insert(HotelModel model)
         {
-            throw new NotImplementedException();
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                var sql = "insert into hotels (name, stars, address, webPageUrl, description) " +
+                    "values (@name, @stars, @address, @webPageUrl, @description)";
+                using (var cmd = new MySqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@name", model.Name);
+                    cmd.Parameters.AddWithValue("@stars", model.Stars);
+                    cmd.Parameters.AddWithValue("@address", model.Address);
+                    cmd.Parameters.AddWithValue("@webPageUrl", model.WebPageUrl);
+                    cmd.Parameters.AddWithValue("@description", model.Description);
+                    cmd.ExecuteNonQuery();
+                    model.Id = (int)cmd.LastInsertedId;
+                    return model;
+                }
+            }
         }
 
         public HotelModel Update(HotelModel model)
         {
-            throw new NotImplementedException();
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                var sql = "update hotels set name = @name, stars = @stars, address = @address, " +
+                    "webPageUrl = @webPageUrl, description = @description where id = @id";
+                using (var cmd = new MySqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@name", model.Name);
+                    cmd.Parameters.AddWithValue("@stars", model.Stars);
+                    cmd.Parameters.AddWithValue("@address", model.Address);
+                    cmd.Parameters.AddWithValue("@webPageUrl", model.WebPageUrl);
+                    cmd.Parameters.AddWithValue("@description", model.Description);
+                    cmd.Parameters.AddWithValue("@id", model.Id);
+                    cmd.ExecuteNonQuery();
+                    return model;
+                }
+            }
         }
-
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            using (var conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                var sql = "delete from hotels where id = @id";
+                using (var cmd = new MySqlCommand(sql, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
     }
 }

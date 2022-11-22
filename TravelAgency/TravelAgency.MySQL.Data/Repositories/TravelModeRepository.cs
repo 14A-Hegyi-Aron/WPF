@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -15,7 +16,7 @@ namespace TravelAgency.Data.Repositories
         private readonly string connectionString;
         public TravelModeRepository()
         {
-            // TODO: implement this please :)
+            this.connectionString = ConfigurationManager.ConnectionStrings["travels"].ConnectionString;
         }
 
         public TravelModeRepository(string connectionString)
