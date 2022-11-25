@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PingPong.MainPage">
+    <FlexLayout>
+        <FlexLayout.Resources>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+        </FlexLayout.Resources>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <VerticalStackLayout Grid.Row="0" VerticalOptions="Center">
+                <Label Text="1. Játékos:"/>
+                <Border WidthRequest="320" HeightRequest="60">
+                    <Entry x:Name="playerOneEnt" WidthRequest="300" HeightRequest="50"/>
+                </Border>
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Row="1">
+                <Label Text="2. Játékos:"/>
+                <Border WidthRequest="320" HeightRequest="60">
+                    <Entry x:Name="playerTwoEnt" WidthRequest="300" HeightRequest="50"/>
+                </Border>
+            </VerticalStackLayout>
+            <Button Clicked="Button_Clicked" Grid.Row="2" Text="PLAY" FontSize="20" WidthRequest="200" HeightRequest="50" VerticalOptions="Start"/>
+        </Grid>
+    </FlexLayout>
+
+</ContentPage>
