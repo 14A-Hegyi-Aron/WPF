@@ -115,7 +115,14 @@ namespace TravelAgency.Data.Repositories
                     where += " and offers.price >= @priceFrom ";
                 if (model.PriceTo != null)
                     where += " and offers.price <= @priceTo ";
-                return conn.Query<OfferModel>(sql, new { model.Destination, model.TravelMode, model.PriceFrom, model.PriceTo });
+                return conn.Query<OfferModel>(sql, new
+                { 
+                    model.Destination,
+                    modelId = model.TravelMode?.Id,
+                    model.PriceFrom,
+                    model.PriceTo
+                });
+                
             }
 
         }
