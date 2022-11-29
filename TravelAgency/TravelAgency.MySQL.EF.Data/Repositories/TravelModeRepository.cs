@@ -6,12 +6,17 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using TravelAgency.Data.Models;
+using TravelAgency.MySQL.EF.Data;
 
 namespace TravelAgency.Data.Repositories
 {
     public class TravelModeRepository: GenericRepository<TravelModeModel>
     {
-        public TravelModeRepository(string fileName = "travelmode.json") : base(fileName)
+        public TravelModeRepository()
+        {
+            
+        }
+        public TravelModeRepository(TravelAgencyDbContext dbContext) : base(dbContext)
         { }
 
     }

@@ -4,12 +4,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using TravelAgency.Data.Models;
+using TravelAgency.MySQL.EF.Data;
 
 namespace TravelAgency.Data.Repositories
 {
     public class HotelRepository: GenericRepository<HotelModel>
     {
-        public HotelRepository(string fileName = "hotels.json" ): base( fileName )
-        { }
+        public HotelRepository()
+        {
+            
+        }
+        public HotelRepository(TravelAgencyDbContext dbContext) : base(dbContext)
+        { 
+            
+        }
     }
 }
