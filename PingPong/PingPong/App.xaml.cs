@@ -1,10 +1,12 @@
 ﻿using PingPong.Data;
+using System.Collections.ObjectModel;
 
 namespace PingPong;
 
 public partial class App : Application
 {
 	static Database database;
+
 
 	public static Database Database
 	{

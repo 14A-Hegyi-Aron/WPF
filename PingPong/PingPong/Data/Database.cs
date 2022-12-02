@@ -1,6 +1,7 @@
 ﻿using SQLite;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 
@@ -16,9 +17,14 @@ namespace PingPong.Data
             connection.CreateTableAsync<Match>().Wait();
         }
 
-        public List<Match> GetAllMatches()
+        public bool DeleteMatchData(Match kivalasztott)
         {
-            return connection.Table<Match>().ToListAsync().Result;
+            return connection.DeleteAsync(kivalasztott).Result == 1;
+        }
+
+        public ObservableCollection<Match> GetAllMatches()
+        {
+            return new ObservableCollection<Match>(connection.Table<Match>().ToListAsync().Result);
         }
 
         public void SaveMatchData(Match match)
