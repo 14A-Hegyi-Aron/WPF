@@ -1,0 +1,4 @@
+﻿Install-Package Pomelo.EntityFrameworkCore.MySql -Version 6.0.2
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 6.0.7
+Install-Package system.Configuration.ConfigurationManager -Version 6.0.1
+Install-Package Newtonsoft.Json
