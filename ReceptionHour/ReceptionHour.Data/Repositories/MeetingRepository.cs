@@ -32,5 +32,13 @@ namespace ReceptionHour.Data.Repositories
                 .Include(m => m.Teacher)
                 .SingleOrDefault(m => m.Id == entity.Id);
         }
+
+        public override MeetingModel Update(MeetingModel entity)
+        {
+            base.Update(entity);
+            return dbContext.Set<MeetingModel>()
+                .Include(m => m.Teacher)
+                .SingleOrDefault(m => m.Id == entity.Id);
+        }
     }
 }
