@@ -15,6 +15,11 @@ namespace ReceptionHour.Data.Repositories
 
         }
 
+        public MeetingRepository(ReceptionHourDbContext dbContext) : base(dbContext)
+        {
+
+        }
+
         public IEnumerable<MeetingModel> Search(TeacherModel teacher, DateTime? date)
         {
             return dbContext.Set<MeetingModel>()

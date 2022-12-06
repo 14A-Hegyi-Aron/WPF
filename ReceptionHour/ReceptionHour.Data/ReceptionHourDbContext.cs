@@ -3,6 +3,7 @@ using ReceptionHour.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,18 +15,29 @@ namespace ReceptionHour.Data
     //  Script-Migration -Project <data project> -StartupProject <data project>
     //  update-database -Project <data project> -StartupProject <data project>
 
-    public class ReceptionHourDbContext: DbContext
+    public class ReceptionHourDbContext : DbContext
     {
         public DbSet<MeetingModel> Meetings { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        private readonly string connStr;
+        public ReceptionHourDbContext()
         {
-            var connStr = ConfigurationManager.ConnectionStrings["db"]?.ConnectionString;
+            connStr = ConfigurationManager.ConnectionStrings["db"]?.ConnectionString;
 #if DEBUG
             if (connStr == null)
                 connStr = "server=localhost;database=receptionhour;uid=root;pwd=;";
 #endif
-            if (connStr != null)
+        }
+
+        public ReceptionHourDbContext(DbContextOptions<ReceptionHourDbContext> options) : base(options)
+        {
+
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+
+            if (!string.IsNullOrEmpty(connStr))
                 optionsBuilder.UseMySql(connStr, ServerVersion.AutoDetect(connStr));
         }
 
@@ -35,9 +47,9 @@ namespace ReceptionHour.Data
 
             modelBuilder.Entity<TeacherModel>().HasData
             (
-                new TeacherModel() { Id = 1, Name = "Teszt Elek", Room = "501", Capacity = 15},
-                new TeacherModel() { Id = 2, Name = "Gipsz Jakab", Room = "502", Capacity = 5},
-                new TeacherModel() { Id = 3, Name = "Winch Eszter", Room = "503", Capacity = 10}
+                new TeacherModel() { Id = 1, Name = "Teszt Elek", Room = "501", Capacity = 15 },
+                new TeacherModel() { Id = 2, Name = "Gipsz Jakab", Room = "502", Capacity = 5 },
+                new TeacherModel() { Id = 3, Name = "Winch Eszter", Room = "503", Capacity = 10 }
             );
         }
     }

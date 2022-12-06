@@ -14,6 +14,13 @@ namespace ReceptionHour.Data.Repositories
         {
 
         }
+
+        public TeacherRepository(ReceptionHourDbContext dbContext) : base(dbContext)
+        {
+            
+        }
+
+        
         
     }
 }
