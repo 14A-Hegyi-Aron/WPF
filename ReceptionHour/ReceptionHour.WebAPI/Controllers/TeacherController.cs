@@ -18,23 +18,38 @@ namespace ReceptionHour.WebAPI.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            try
+            return this.Run(() =>
             {
                 return Ok(teacherRepository.GetAll());
-            }
-            catch (Exception ex)
-            {
-#if DEBUG
-                return StatusCode(500, new
-                {
-                    error = ex.Message,
-                    stackTrace = ex.StackTrace
-                });
-#else
-                Response.Body 
-#endif
+            });
+        }
 
-            }
+        [HttpPut]
+        public IActionResult Insert(TeacherModel model)
+        {
+            return this.Run(() =>
+            {
+                return Ok(teacherRepository.Insert(model));
+            });
+        }
+
+        [HttpPost]
+        public IActionResult Update(TeacherModel model)
+        {
+            return this.Run(() =>
+            {
+                return Ok(teacherRepository.Update(model));
+            });
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(TeacherModel model)
+        {
+            return this.Run(() =>
+            {
+                teacherRepository.Delete(model);
+                return Ok();
+            });
         }
     }
 }
