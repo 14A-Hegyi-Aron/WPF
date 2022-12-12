@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\WPF App\\TableTennisWPF.csproj": {}
+    "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\WPF App\\TableTennisWPF.csproj": {}
   },
   "projects": {
-    "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\TableTennis.Data\\TableTennis.Data.csproj": {
+    "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\TableTennis.Data\\TableTennis.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\TableTennis.Data\\TableTennis.Data.csproj",
+        "projectUniqueName": "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\TableTennis.Data\\TableTennis.Data.csproj",
         "projectName": "TableTennis.Data",
-        "projectPath": "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\TableTennis.Data\\TableTennis.Data.csproj",
-        "packagesPath": "C:\\Users\\hegyi.aron.ferenc\\.nuget\\packages\\",
-        "outputPath": "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\TableTennis.Data\\obj\\",
+        "projectPath": "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\TableTennis.Data\\TableTennis.Data.csproj",
+        "packagesPath": "C:\\Users\\hegyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\TableTennis.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hegyi.aron.ferenc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hegyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -70,20 +70,20 @@
         }
       }
     },
-    "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\WPF App\\TableTennisWPF.csproj": {
+    "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\WPF App\\TableTennisWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\WPF App\\TableTennisWPF.csproj",
+        "projectUniqueName": "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\WPF App\\TableTennisWPF.csproj",
         "projectName": "TableTennisWPF",
-        "projectPath": "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\WPF App\\TableTennisWPF.csproj",
-        "packagesPath": "C:\\Users\\hegyi.aron.ferenc\\.nuget\\packages\\",
-        "outputPath": "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\WPF App\\obj\\",
+        "projectPath": "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\WPF App\\TableTennisWPF.csproj",
+        "packagesPath": "C:\\Users\\hegyi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\WPF App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hegyi.aron.ferenc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hegyi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -99,8 +99,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\TableTennis.Data\\TableTennis.Data.csproj": {
-                "projectPath": "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\TableTennis.Data\\TableTennis.Data.csproj"
+              "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\TableTennis.Data\\TableTennis.Data.csproj": {
+                "projectPath": "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\TableTennis.Data\\TableTennis.Data.csproj"
               }
             }
           }

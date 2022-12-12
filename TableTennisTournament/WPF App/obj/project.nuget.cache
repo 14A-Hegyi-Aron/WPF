@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PzQRxYZq/daJ9tTehLTOy2buW4ThvHX5iiE7lgVSnvMOlRNtlOHwfqhjXzj2GR2L6fV1GOJlb7578Q4UuLOBeA==",
+  "dgSpecHash": "Fc7ZjBPMbEllwkYXduCdbe21F7LXs1A7hrTz3Ra7rcoehpHYrw4Ow9+m+cURXNYFbGkVxk4Ep3jNjaZ3XaapUA==",
   "success": true,
-  "projectFilePath": "D:\\14A_Hegyi_Aron\\WPF\\TableTennisTournament\\WPF App\\TableTennisWPF.csproj",
+  "projectFilePath": "C:\\Users\\hegyi\\Documents\\GitHub\\WPF\\TableTennisTournament\\WPF App\\TableTennisWPF.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hegyi.aron.ferenc\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\hegyi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

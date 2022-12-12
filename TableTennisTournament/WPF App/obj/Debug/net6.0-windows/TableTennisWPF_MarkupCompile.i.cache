@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\
+C:\Users\hegyi\Documents\GitHub\WPF\TableTennisTournament\WPF App\obj\Debug\net6.0-windows\
 TableTennisWPF
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\14A_Hegyi_Aron\WPF\TableTennisTournament\WPF App\App.xaml
+C:\Users\hegyi\Documents\GitHub\WPF\TableTennisTournament\WPF App\App.xaml
 7661670736
 
 15768854307
-1961598528078
+196-907119033
 MainWindow.xaml;pages\CompetitorPage.xaml;pages\DrawPage.xaml;pages\HomePage.xaml;pages\ResultsPage.xaml;usercontrols\DrawPair.xaml;usercontrols\ResultControl.xaml;
 
 True
