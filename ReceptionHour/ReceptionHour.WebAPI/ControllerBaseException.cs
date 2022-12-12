@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ReceptionHour.WebAPI
 {
@@ -68,6 +69,13 @@ namespace ReceptionHour.WebAPI
                     sw.WriteLine();
                 }
             }
+        }
+        public static string GetConfigValue(this ControllerBase controller, string key)
+        {
+            var configuraion = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json")
+                .Build();
+            return configuraion.GetValue<string>(key);
         }
     }
 }
